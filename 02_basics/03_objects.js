@@ -1,8 +1,8 @@
 //singleton
 //object.create()  //  this is constructor method
-// we will talk abt it later
+// we will talk abt above 2 later
 
-//  OBJECT LITERALS
+//  OBJECT LITERALS                     -In this we will talk about object literals
 
 const mySym=Symbol("key1")  //symbol declaration
 //obj declaration
