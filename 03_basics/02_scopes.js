@@ -44,7 +44,7 @@ if(true)
 
 // console.log(addone(5));
 function addone(num){
-    return num+3
+    return num+4
 }
 
 //console.log(addtwo(5));         //It would give error as we have used it before intialisation of addtwo
