@@ -58,3 +58,17 @@ function getSecondValue(getArray){
 }
 // console.log(getSecondValue(myArray));
 //  // console.log(getSecondValue([400,2300,40,54]));      // we can also pass array in function argument like this
+
+
+
+//we will discuss about two ways we can declare function
+
+// console.log(addone(5));
+function addone(num){
+    return num+4
+}
+
+//console.log(addtwo(5));         //It would give error as we have used it before intialisation of addtwo
+const addtwo=function(num){
+    return num + 2
+}
