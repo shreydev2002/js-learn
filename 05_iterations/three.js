@@ -36,6 +36,3 @@ const myObject = {          //We try to iterate object the same way we did with 
 //     console.log(key, ':-', value);
     
 // }
-
-//For-of loop does not work for Objects but works for maps   
-//To iterate Objects we use For-in   C.T.O
