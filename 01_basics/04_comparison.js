@@ -11,7 +11,7 @@ console.log(null >= 0);
 
 console.log(undefined == 0);
 console.log(undefined > 0);
-console.log(undefined < 0);
+console.log(undefined < 1);
 /* In the case of undefined all the results would be false */
 
 /* === checks the values as well as the data type */
