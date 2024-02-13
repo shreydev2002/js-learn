@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shreyansh Dev</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>Javascipt</li>
+    </ul>
+</body>
+
+<script>
+    function addLang(Langname){             //creating a function
+        const li=document.createElement('li');      //To create an element 'li'  for list
+        li.innerHTML=`${Langname}`          //to declare text in the var li
+        document.querySelector('.language').appendChild(li)         //to select the language class and append li to it
+    }
+    addLang('Python')       //to pass value to the function parameter 
+    addLang('Typescript ')
+
+    function addOptiLang(langname){    //In a more optimised way using appendChild and CreateTextNode
+        const li=document.createElement('li');              //createTextNode discussed in the three.html
+        li.appendChild(document.createTextNode(langname));      //in this the code less traversing takes place that would not be important in basic projects but would be appreciable for large projects
+        document.querySelector('.language').appendChild(li);
+    }
+    addOptiLang('Ruby')
+
+    //Edit
+    const thirdlang = document.querySelector('li:nth-child(3)');
+    // thirdlang.innerHTML="Kotlin"             //This also works fine
+    const newli=document.createElement('li');   //MORE OPTIMISED WAY for above
+    newli.textContent='Kotlin';             //giving text content to the newli
+    thirdlang.replaceWith(newli)            //replaceWith()  tends to replace value of an element with a new value
+
+    //edit
+    const firstlang = document.querySelector("li:first-child")
+    firstlang.outerHTML = '<li> JAVA </li>'         //outerHTML changes the whole outer html code and we need to write the code 
+
+    //remove
+    const lastlang=document.querySelector('li:last-child')
+    lastlang.remove()           //Removes the element 
+
+</script>
+</html>
