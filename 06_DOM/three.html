@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Shreyansh Dev</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    
+</body>
+
+<script>
+    const div = document.createElement('div')
+    console.log(div);
+    div.className = 'main'
+    div.id = Math.round(Math.random() * 10 +1)
+    div.setAttribute("Title", "Generated Title")
+    div.style.backgroundColor="green"
+    div.style.padding = "12px"
+    // div.innerText = "Hello Sir"
+    const addText = document.createTextNode("Hello Sir")    //To initialize a text element with content "Hello Sir"
+    div.appendChild(addText)        //to attach the textnode with div
+
+    document.body.appendChild(div)  //to attach whole div with HTML doc and print it on page
+</script>
+</html>  
